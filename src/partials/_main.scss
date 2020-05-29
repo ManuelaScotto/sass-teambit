@@ -1,0 +1,154 @@
+//jumbo
+.jumbo {
+   display: flex;
+   width: $width1150;
+   margin: calc(100px + #{$heightNav}) auto 100px;
+
+   .text {
+        width: 50%;   
+        h1 {
+            font-size: $fontTitle;
+            color: $colorFont;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+        p {
+           margin-bottom: 40px;
+           font-size: $fontP;
+           font-weight: 500;
+           color: $colorFont; 
+           line-height: 1.8;
+        }
+        &-button {
+            display: flex;
+            margin-bottom: 20px;
+            .btn {
+               @include btn (6px 18px, $colorBtn,$colorBtn , $colorBtn);
+               font-size: $fontLink;
+               color: white;
+               &:hover {
+                   background-color: darken($colorBtn, $amount: 10);
+               }
+               svg {
+                   margin-right: 5px;
+               }
+            }
+            span {
+                padding: 6px 30px;
+                font-size: $fontLink;
+                color: lighten($colorFont, $amount: 40);
+            }
+        }
+        a {
+            font-size: $fontLink;
+            color: $colorFont;
+            font-weight: 500;
+            &:hover {
+                color: $colorBtn;
+            }
+            svg {
+                margin-left: 10px;
+            }
+        }
+   }
+   .img {
+    width: 50%;
+    margin-top: 20px;
+    img {
+        width: 100%;
+    }
+   }
+}
+
+.container-lead,
+.container-solution,
+.container-get {
+    width: $width100;
+    background-color: $colorBrand;
+    height: calc (#{$heightProv} + 100px); 
+}
+
+.lead {
+   width: $width1150;
+   margin: 0 auto;
+   background-color: linen;
+   .images {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       .box1 {
+           margin: 10px;
+           width: 30%;
+           height: 150px;
+           background-color: mediumvioletred;
+       }
+   }
+}
+
+
+.solution {
+   width: $width1150;
+   margin: 0 auto;
+   background-color: magenta;
+   .images {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       .box1 {
+           margin: 10px;
+           width: 30%;
+           height: 150px;
+           background-color: mediumvioletred;
+       }
+   }
+}
+
+.feedback {
+   display: flex;
+   width: $width100;
+   height: $heightProv; 
+   background-color: maroon;
+   .img-left {
+       width: 50%;
+          height: $heightProv; 
+       background-color: midnightblue;
+   }
+   .text-right {
+       width: 50%;
+       height: $heightProv; 
+       background-color: mintcream;
+   }
+}
+
+.survey {
+   width: $width100;
+   height: $heightProv; 
+   background-color: mediumaquamarine;
+}
+
+.reviews {
+   width: $width100;
+   height: $heightProv; 
+   background-color: mediumblue;
+}
+
+.praise {
+   width: $width100;
+   height: $heightProv; 
+   background-color: mediumorchid;
+}
+
+.get {
+    display: flex;
+    flex-direction: column;
+   width: $width1150;
+   height: $heightProv; 
+   margin: 0 auto;
+   background-color: mediumpurple;
+   .box {
+       margin: auto;
+       width: 200px;
+       height: 200px;
+       background-color: mistyrose;
+   }
+}

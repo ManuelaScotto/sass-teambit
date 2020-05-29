@@ -1,0 +1,12 @@
+@mixin btn ($padding, $borderColor, $backgroundColor, $backgroundColorHover) {
+    display: flex;
+    align-items: center;
+    padding: $padding;
+    border: 1px solid $borderColor;
+    background-color: $backgroundColor;
+    border-radius: 7px;
+    transition: all 0.20s;
+    &:hover {
+        background-color: $backgroundColorHover;
+    }
+}
