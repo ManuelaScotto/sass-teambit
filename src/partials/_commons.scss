@@ -16,4 +16,24 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 80px 50px;
+    font-size: $fontTitle - 10px;
+    color: $colorFont;
+    text-align: center;
+    line-height: 1.6;
+}
+h3 {
+    font-size: $fontTitle / 2;
+    color: $colorFont;
+}
 
+p {
+    color: $colorFont;
+}
+
+.padding-bottom60 {
+    padding-bottom: 60px;
+}

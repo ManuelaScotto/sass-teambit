@@ -16,7 +16,6 @@
            margin-bottom: 40px;
            font-size: $fontP;
            font-weight: 500;
-           color: $colorFont; 
            line-height: 1.8;
         }
         &-button {
@@ -65,90 +64,104 @@
 .container-get {
     width: $width100;
     background-color: $colorBrand;
-    height: calc (#{$heightProv} + 100px); 
 }
 
 .lead {
-   width: $width1150;
-   margin: 0 auto;
-   background-color: linen;
-   .images {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-       .box1 {
-           margin: 10px;
-           width: 30%;
-           height: 150px;
-           background-color: mediumvioletred;
-       }
-   }
+    @include box;
+    border-bottom: 1px solid $colorBorder;
 }
-
 
 .solution {
-   width: $width1150;
-   margin: 0 auto;
-   background-color: magenta;
-   .images {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-       .box1 {
-           margin: 10px;
-           width: 30%;
-           height: 150px;
-           background-color: mediumvioletred;
-       }
-   }
+    @include box;
 }
 
-.feedback {
-   display: flex;
-   width: $width100;
-   height: $heightProv; 
-   background-color: maroon;
-   .img-left {
-       width: 50%;
-          height: $heightProv; 
-       background-color: midnightblue;
-   }
-   .text-right {
-       width: 50%;
-       height: $heightProv; 
-       background-color: mintcream;
-   }
-}
-
-.survey {
-   width: $width100;
-   height: $heightProv; 
-   background-color: mediumaquamarine;
-}
-
+.feedback,
 .reviews {
-   width: $width100;
-   height: $heightProv; 
-   background-color: mediumblue;
+    @include textImg(450px, 0 0 0 20px);
 }
-
+.surveys,
 .praise {
-   width: $width100;
-   height: $heightProv; 
-   background-color: mediumorchid;
+    margin-left: 18%;
+    @include textImg (32%, 0 20px 0 0);
 }
 
 .get {
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
    width: $width1150;
-   height: $heightProv; 
+   padding-top: 20px;
    margin: 0 auto;
-   background-color: mediumpurple;
    .box {
+       position: relative;
+       padding: 20px;
        margin: auto;
-       width: 200px;
-       height: 200px;
-       background-color: mistyrose;
+       width: 628px;
+       background-color: white;
+       border: 1px solid $colorBorder;
+       p {
+           font-size: $fontP - 6px;
+           padding: 10px 20px;
+           font-weight: 500;
+           line-height: 1.7;
+       }
+       .team {
+           display: flex;
+           margin: 7px 0 0 10px;
+           .img-account img {
+               width: 38px;
+               margin-left: 10px;
+           }
+           .name {
+               padding-left: 18px ;
+               p.name-name {
+                   padding: 0;
+                   font-size: 14px;
+                   color: $colorBtn;
+               }
+               p.name-team {
+                   padding: 0;
+                   font-size: 12px;
+               }
+           }
+       }
+       .comma {
+           position: absolute;
+           top: -20px;
+           left: 0;
+           width: 37px;
+       }
+    }
+    .text-button {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+        .btn {
+            @include btn (6px 18px, $colorBtn,$colorBtn , $colorBtn);
+            font-size: $fontLink;
+            color: white;
+            &:hover {
+                background-color: darken($colorBtn, $amount: 10);
+            }
+            svg {
+                margin-right: 5px;
+            }
+        }
+        span {
+            padding: 6px 30px;
+            font-size: $fontLink;
+            color: lighten($colorFont, $amount: 40);
+        }
+    }
+    a {
+        text-align: center;
+        font-size: $fontLink;
+        color: $colorFont;
+        font-weight: 500;
+        &:hover {
+            color: $colorBtn;
+        }
+        svg {
+            margin-left: 10px;
+        }
    }
 }

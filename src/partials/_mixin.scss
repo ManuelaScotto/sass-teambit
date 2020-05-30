@@ -10,3 +10,74 @@
         background-color: $backgroundColorHover;
     }
 }
+
+@mixin box {  
+   width: $widthTablet - 25%;
+   margin: 0 auto;
+   h3.title-h3 {
+       width: 90%;
+       margin: 0 auto;
+       padding: 80px;
+   }
+   h3 {
+        text-align: center;
+       }
+   .images {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       margin-bottom: 60px;
+       .box1 {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           margin: 30px;
+           width: 22%;          
+           img {
+               height: 83px;
+           }
+           p {
+               padding-top: 20px;
+               text-align: center;
+               font-size: 18px;
+           }
+       }
+       .box1:last-child img{
+           height: 280px;
+       }      
+   }
+}
+
+@mixin textImg ($widthMix, $padding) {
+    display: flex;
+    width: $width100;
+    padding-top: 100px;
+   .img {
+       width: 50%;
+       img {
+           width: 100%;
+       }
+   }
+   .text {
+       width: $widthMix;
+       line-height: 1.6;
+       padding: $padding;
+       p {
+           font-size: $fontP;
+           font-weight: 500;
+           margin-top: 20px;
+           margin-bottom: 40px;
+       }
+       a {
+           display: block;
+           font-size:  $fontP;
+           font-weight: 500;
+           color: $colorBtn;
+       }
+       img {
+          width: 230px;
+          margin-top: 30px;
+          margin-left: 70px;
+       }
+   }
+}
