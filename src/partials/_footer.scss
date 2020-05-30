@@ -1,15 +1,15 @@
 footer {
    display: flex;
-   padding-top: 100px;
    width: $width1150;
    margin: 0 auto;
+   padding-top: $paddingTop;
    .footer-logo {
       display: flex;
       align-items: flex-start;
       width: 40%;
       img {
-         margin-top: 10px;
          width: 25%;
+         margin-top: 10px;
       }
       p {
          padding: 10px 30px 0 20px;
@@ -25,21 +25,21 @@ footer {
       }
    }
    .col {
-      width: 60%;
       display: flex;
+      width: 60%;
       &-link {
          width: calc(100% / 5);
          padding: 8px;
          line-height: 2;
          p {
+            margin-bottom: 5px;
             font-weight: 600;
             font-size: $fontFooter;
-            margin-bottom: 5px;
          }
          a {
             font-size: $fontLink;
-            color: $colorFont;
             font-weight: 500;
+            color: $colorFont;
             &:hover {
                color: $colorBtn;
             }

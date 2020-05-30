@@ -8,21 +8,13 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 h2 {
   width: 90%;
   margin: 0 auto;
   padding: 80px 80px 50px;
   font-size: 40px;
-  color: #58402b;
   text-align: center;
+  color: #58402b;
   line-height: 1.6;
 }
 
@@ -33,6 +25,14 @@ h3 {
 
 p {
   color: #58402b;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .padding-bottom60 {
@@ -85,8 +85,8 @@ header {
   background-color: white;
 }
 .nav .menu .wrapper-hamburger ul {
-  flex-direction: column;
   padding-top: 20px;
+  flex-direction: column;
 }
 .nav .menu .wrapper-hamburger ul li {
   line-height: 2.8;
@@ -126,8 +126,8 @@ header {
   align-items: center;
   padding: 8px 11px;
   border: 1px solid #30488f;
-  background-color: white;
   border-radius: 7px;
+  background-color: white;
   transition: all 0.2s;
   font-weight: 700;
   font-size: 13px;
@@ -151,9 +151,9 @@ header {
   flex-direction: column;
   position: absolute;
   transform: translate(35%, 60%);
+  border: 1px solid white;
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(88, 64, 43, 0.44);
-  border: 1px solid white;
   background-color: white;
 }
 .nav .menu ul .parent-dropdown .dropdown a {
@@ -172,10 +172,10 @@ header {
   width: 50%;
 }
 .jumbo .text h1 {
-  font-size: 50px;
-  color: #58402b;
-  line-height: 1.5;
   margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 1.5;
+  color: #58402b;
 }
 .jumbo .text p {
   margin-bottom: 40px;
@@ -192,8 +192,8 @@ header {
   align-items: center;
   padding: 6px 18px;
   border: 1px solid #30488f;
-  background-color: #30488f;
   border-radius: 7px;
+  background-color: #30488f;
   transition: all 0.2s;
   font-size: 13px;
   color: white;
@@ -261,16 +261,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px;
   width: 22%;
+  margin: 30px;
 }
 .lead .images .box1 img {
   height: 83px;
 }
 .lead .images .box1 p {
   padding-top: 20px;
-  text-align: center;
   font-size: 18px;
+  text-align: center;
 }
 .lead .images .box1:last-child img {
   height: 280px;
@@ -298,16 +298,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px;
   width: 22%;
+  margin: 30px;
 }
 .solution .images .box1 img {
   height: 83px;
 }
 .solution .images .box1 p {
   padding-top: 20px;
-  text-align: center;
   font-size: 18px;
+  text-align: center;
 }
 .solution .images .box1:last-child img {
   height: 280px;
@@ -330,15 +330,15 @@ header {
 .feedback .text,
 .reviews .text {
   width: 450px;
-  line-height: 1.6;
   padding: 0 0 0 20px;
+  line-height: 1.6;
 }
 .feedback .text p,
 .reviews .text p {
-  font-size: 22px;
-  font-weight: 500;
   margin-top: 20px;
   margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: 500;
 }
 .feedback .text a,
 .reviews .text a {
@@ -356,7 +356,7 @@ header {
 
 .surveys,
 .praise {
-  margin-left: 18%;
+  padding-left: 18%;
   display: flex;
   width: 100%;
   padding-top: 100px;
@@ -372,15 +372,15 @@ header {
 .surveys .text,
 .praise .text {
   width: 32%;
-  line-height: 1.6;
   padding: 0 20px 0 0;
+  line-height: 1.6;
 }
 .surveys .text p,
 .praise .text p {
-  font-size: 22px;
-  font-weight: 500;
   margin-top: 20px;
   margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: 500;
 }
 .surveys .text a,
 .praise .text a {
@@ -400,20 +400,20 @@ header {
   display: flex;
   flex-direction: column;
   width: 75%;
-  padding-top: 20px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 .get .box {
   position: relative;
-  padding: 20px;
-  margin: auto;
   width: 628px;
+  margin: auto;
+  padding: 20px;
   background-color: white;
   border: 1px solid #c6a589;
 }
 .get .box p {
-  font-size: 16px;
   padding: 10px 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.7;
 }
@@ -453,8 +453,8 @@ header {
   align-items: center;
   padding: 6px 18px;
   border: 1px solid #30488f;
-  background-color: #30488f;
   border-radius: 7px;
+  background-color: #30488f;
   transition: all 0.2s;
   font-size: 13px;
   color: white;
@@ -476,8 +476,8 @@ header {
 .get a {
   text-align: center;
   font-size: 13px;
-  color: #58402b;
   font-weight: 500;
+  color: #58402b;
 }
 .get a:hover {
   color: #30488f;
@@ -488,9 +488,9 @@ header {
 
 footer {
   display: flex;
-  padding-top: 100px;
   width: 75%;
   margin: 0 auto;
+  padding-top: 100px;
 }
 footer .footer-logo {
   display: flex;
@@ -498,8 +498,8 @@ footer .footer-logo {
   width: 40%;
 }
 footer .footer-logo img {
-  margin-top: 10px;
   width: 25%;
+  margin-top: 10px;
 }
 footer .footer-logo p {
   padding: 10px 30px 0 20px;
@@ -514,8 +514,8 @@ footer .footer-logo p a:hover {
   text-decoration: underline;
 }
 footer .col {
-  width: 60%;
   display: flex;
+  width: 60%;
 }
 footer .col-link {
   width: calc(100% / 5);
@@ -523,14 +523,14 @@ footer .col-link {
   line-height: 2;
 }
 footer .col-link p {
+  margin-bottom: 5px;
   font-weight: 600;
   font-size: 18px;
-  margin-bottom: 5px;
 }
 footer .col-link a {
   font-size: 13px;
-  color: #58402b;
   font-weight: 500;
+  color: #58402b;
 }
 footer .col-link a:hover {
   color: #30488f;
@@ -633,8 +633,8 @@ footer {
     flex-wrap: wrap;
   }
   footer .col-link {
-    margin-top: 20px;
     width: calc(100% / 2);
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 912px) {
@@ -683,8 +683,8 @@ footer {
     align-items: center;
     padding: 6px;
     border: 1px solid #30488f;
-    background-color: #30488f;
     border-radius: 7px;
+    background-color: #30488f;
     transition: all 0.2s;
   }
   .get .text-button .btn:hover {
@@ -702,8 +702,8 @@ footer {
     width: 100%;
   }
   .get .text-button a .btn {
-    justify-content: center;
     width: 100%;
+    justify-content: center;
   }
   .get .text-button span {
     width: 100%;

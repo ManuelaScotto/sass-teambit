@@ -3,8 +3,8 @@
     align-items: center;
     padding: $padding;
     border: 1px solid $borderColor;
-    background-color: $backgroundColor;
     border-radius: 7px;
+    background-color: $backgroundColor;
     transition: all 0.20s;
     &:hover {
         background-color: $backgroundColorHover;
@@ -31,15 +31,15 @@
            display: flex;
            flex-direction: column;
            align-items: center;
-           margin: 30px;
            width: 22%;          
+           margin: 30px;
            img {
                height: 83px;
            }
            p {
                padding-top: 20px;
-               text-align: center;
                font-size: 18px;
+               text-align: center;
            }
        }
        .box1:last-child img{
@@ -51,7 +51,7 @@
 @mixin textImg ($widthMix, $padding) {
     display: flex;
     width: $width100;
-    padding-top: 100px;
+    padding-top: $paddingTop;
    .img {
        width: 50%;
        img {
@@ -60,13 +60,13 @@
    }
    .text {
        width: $widthMix;
-       line-height: 1.6;
        padding: $padding;
+       line-height: 1.6;
        p {
-           font-size: $fontP;
-           font-weight: 500;
            margin-top: 20px;
            margin-bottom: 40px;
+           font-size: $fontP;
+           font-weight: 500;
        }
        a {
            display: block;

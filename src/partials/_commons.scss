@@ -8,23 +8,16 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 h2 {
     width: 90%;
     margin: 0 auto;
     padding: 80px 80px 50px;
     font-size: $fontTitle - 10px;
-    color: $colorFont;
     text-align: center;
+    color: $colorFont;
     line-height: 1.6;
 }
+
 h3 {
     font-size: $fontTitle / 2;
     color: $colorFont;
@@ -32,6 +25,14 @@ h3 {
 
 p {
     color: $colorFont;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .padding-bottom60 {

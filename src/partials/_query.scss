@@ -75,8 +75,8 @@
             width: 100%;
             flex-wrap: wrap;
             &-link {
-                margin-top: 20px;
                 width: calc(100% / 2);
+                margin-top: 20px;
             }
         }
     }
@@ -87,6 +87,7 @@
         padding: 20px 0;
     }
 }
+
 @media screen and (max-width: 767px) {
     .nav .menu ul.menu-nav {
         display:none;
@@ -134,8 +135,8 @@
         a {
             width: 100%;
             .btn {
-                justify-content: center;
                 width: 100%;
+                justify-content: center;
             }
         }
         span {
@@ -144,6 +145,7 @@
         }
     }
 }
+
 @media screen and (max-width: 379px) {
     footer .col .col-link {
         width: 100%;

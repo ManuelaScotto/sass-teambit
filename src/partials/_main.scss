@@ -2,15 +2,14 @@
 .jumbo {
    display: flex;
    width: $width1150;
-   margin: calc(100px + #{$heightNav}) auto 100px;
-
+   margin: calc(#{$paddingTop} + #{$heightNav}) auto 100px;
    .text {
         width: 50%;   
         h1 {
-            font-size: $fontTitle;
-            color: $colorFont;
-            line-height: 1.5;
             margin-bottom: 30px;
+            font-size: $fontTitle;
+            line-height: 1.5;
+            color: $colorFont;
         }
         p {
            margin-bottom: 40px;
@@ -81,7 +80,7 @@
 }
 .surveys,
 .praise {
-    margin-left: 18%;
+    padding-left: 18%;
     @include textImg (32%, 0 20px 0 0);
 }
 
@@ -89,18 +88,18 @@
    display: flex;
    flex-direction: column;
    width: $width1150;
-   padding-top: 20px;
    margin: 0 auto;
+   padding-top: 20px;
    .box {
        position: relative;
-       padding: 20px;
-       margin: auto;
        width: 628px;
+       margin: auto;
+       padding: 20px;
        background-color: white;
        border: 1px solid $colorBorder;
        p {
-           font-size: $fontP - 6px;
            padding: 10px 20px;
+           font-size: $fontP - 6px;
            font-weight: 500;
            line-height: 1.7;
        }
@@ -155,8 +154,8 @@
     a {
         text-align: center;
         font-size: $fontLink;
-        color: $colorFont;
         font-weight: 500;
+        color: $colorFont;
         &:hover {
             color: $colorBtn;
         }
