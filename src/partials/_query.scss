@@ -1,3 +1,4 @@
+//desktop
 @media screen and (max-width: 1200px) {
     .nav,
     .jumbo,
@@ -9,6 +10,7 @@
     }
 }
 
+//desktop
 @media screen and (max-width: 1138px) {
     .jumbo {
         flex-direction: column;
@@ -23,6 +25,7 @@
     }
 }
 
+//ipad
 @media screen and (max-width: 991px) {
     .feedback, 
     .surveys,
@@ -82,12 +85,14 @@
     }
 }
 
+//ipad
 @media screen and (max-width: 912px) {
     footer .footer-logo p {
         padding: 20px 0;
     }
 }
 
+//ipad
 @media screen and (max-width: 767px) {
     .nav .menu ul.menu-nav {
         display:none;
@@ -129,6 +134,7 @@
     }
 }
 
+//smartphone
 @media screen and (max-width: 479px) {
     .get .text-button {
         flex-wrap: wrap;
@@ -146,6 +152,7 @@
     }
 }
 
+//smartphone
 @media screen and (max-width: 379px) {
     footer .col .col-link {
         width: 100%;
