@@ -3,7 +3,8 @@
     .jumbo,
     .lead,
     .solution,
-    .get {
+    .get,
+    footer {
         width: $widthTablet;
     }
 }
@@ -54,8 +55,38 @@
     .praise {
         margin-left: 0;
     }
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+        padding-left: 20px;
+        .footer-logo {
+            width: 100%;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            img {
+                width: 50px
+            }
+            p {
+                width: 780px;
+            }
+        }
+        .col {
+            width: 100%;
+            flex-wrap: wrap;
+            &-link {
+                margin-top: 20px;
+                width: calc(100% / 2);
+            }
+        }
+    }
 }
 
+@media screen and (max-width: 912px) {
+    footer .footer-logo p {
+        padding: 20px 0;
+    }
+}
 @media screen and (max-width: 767px) {
     .nav .menu ul.menu-nav {
         display:none;
@@ -94,5 +125,27 @@
                 padding: 6px 10px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .get .text-button {
+        flex-wrap: wrap;
+        a {
+            width: 100%;
+            .btn {
+                justify-content: center;
+                width: 100%;
+            }
+        }
+        span {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 379px) {
+    footer .col .col-link {
+        width: 100%;
     }
 }
